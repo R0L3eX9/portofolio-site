@@ -32,7 +32,8 @@ body {
 }
 
 .work-scale:hover {
-    scale: 1.2;
+    scale: 1.1;
+    transition: .3s ease-in;
 }
 
 
@@ -96,7 +97,7 @@ nav {
 }
 
 #photo-with-me1 {
-    width: 17vw;
+    width: 21vw;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -205,6 +206,7 @@ nav {
 
 #photo-with-me2 {
     width: 45%;
+    margin-left: 3rem;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -231,7 +233,7 @@ nav {
     width: 29vw;
     margin: 2rem 2rem;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px 2px rgba(1,1, 1, 0.5);
+    box-shadow: 2px 2px 5px 2px rgba(1, 1, 1, 0.5);
 }
 
 /* Contact*/
@@ -258,13 +260,17 @@ nav {
     margin-left: 1rem;
 }
 
+.email a:hover {
+    color: #27d827;
+}
+
 .contact-icons {
     justify-content: space-around;
 
     width: 10%;
     margin: 2rem auto auto;
     padding-bottom: 2rem;
-    
+
 }
 
 footer {
@@ -275,6 +281,112 @@ footer {
     font-size: 1.25rem;
 }
 
-@media screen and (max-width: 768px) {
 
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    /* HOME*/
+
+    .container {
+        margin: 0;
+    }
+
+    .short-description {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #photo-with-me1 {
+        width: 60vw;
+        margin: 1.5rem 0;
+    }
+
+    .description-text {
+        margin: 0;
+    }
+
+    .description-text h1 {
+        margin: 0 20%;
+    }
+
+    .description-text p {
+        margin: 1rem 16%;
+    }
+
+
+
+    /* SKILLS*/
+
+    .skill-icons {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 50%;
+    }
+
+    .skill-icons img {
+        width: 12vw;
+    }
+
+    #work-btn {
+        padding: 1rem 3rem;
+        margin-bottom: 10%;
+        font-size: 1.4rem;
+    }
+
+    /* ABOUT*/
+    .about-me-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .about-me {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .about-text {
+        padding: 0;
+        margin: 2rem 0;
+        width: 85vw;
+        display: block;
+    }
+
+    #photo-with-me2 {
+        width: 50%;
+        margin: 1rem auto;
+    }
+
+    /* WORK*/
+
+    .projects {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .projects img {
+        width: 70vw;
+        margin: 1.5rem 1.5rem;
+    }
+
+
+    /* Contact*/
+
+    .contact-container img {
+        width: 7vw;
+    }
+
+
+    .email a {
+        font-size: 1.3rem;
+    }
+
+    .contact-icons {
+        width: 50%;
+    }
 }
