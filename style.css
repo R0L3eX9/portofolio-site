@@ -14,12 +14,33 @@ body {
     overflow-x: hidden;
 }
 
+/* Global classes*/
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title {
+    padding-top: 2rem;
+}
+
+.green-color {
+    color: #5bf55b;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+.work-scale:hover {
+    scale: 1.2;
+}
+
+
 /* NAV BAR*/
 
 .nav-container {
-    display: flex;
     justify-content: flex-end;
-    align-items: center;
+
     padding: 0.6rem 10%;
 
     background-color: #19191E;
@@ -70,14 +91,17 @@ nav {
 }
 
 .short-description {
-    display: flex;
-    justify-content: center;
+    align-items: unset;
     margin: 3rem 0;
 }
 
+#photo-with-me1 {
+    width: 17vw;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
 .description-text {
-    margin-top: 3%;
-    margin-left: 2%;
+    margin: 3% 0 0 2%;
 }
 
 .description-text h1 {
@@ -86,13 +110,7 @@ nav {
 
 .description-text p {
     font-size: 1.7rem;
-    margin-left: 8rem;
-    margin-top: 1rem;
-}
-
-#photo-with-me1 {
-    width: 17vw;
-    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+    margin: 1rem 0 0 8rem;
 }
 
 /* SKILLS*/
@@ -100,6 +118,7 @@ nav {
 .skill-container {
     background-color: #19191E;
     color: white;
+
     text-align: center;
     height: 60vh;
 }
@@ -109,9 +128,8 @@ nav {
 }
 
 .skill-icons {
-    display: flex;
     justify-content: space-around;
-    align-items: center;
+
     height: 60%;
 }
 
@@ -121,15 +139,18 @@ nav {
 }
 
 #work-btn {
-    background-color: #5bf55b;
     display: inline-block;
-    text-decoration: none;
     padding: 2rem 5rem;
     margin-bottom: 5%;
+
+    text-decoration: none;
     font-size: 1.5rem;
+
     border: none;
     cursor: pointer;
     border-radius: 5px;
+
+    background-color: #5bf55b;
     color: white;
 }
 
@@ -141,50 +162,37 @@ nav {
     background-color: #27d827;
 }
 
-.section-title {
-    padding-top: 2rem;
-}
 
 
 
 /* ABOUT ME*/
 .about-me-container {
     padding: 0 1rem 0 1rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     margin: 8rem 0;
 
-}
-
-.about-text {
-    display: block;
+    text-align: center;
+    flex-direction: column;
 }
 
 .section-title {
     font-size: 3rem;
 }
 
-#photo-with-me2 {
-    width: 45%;
-    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
-}
-
 .about-me {
-    display: flex;
     justify-content: space-around;
-    align-items: center;
+
     width: 50%;
 }
 
 .about-text {
     background-color: white;
+
     padding: 1rem 1rem;
     margin: 2rem 0;
     width: 30vw;
     height: 10%;
+    display: block;
+
     text-indent: 0.2rem;
     word-spacing: .2rem;
     line-height: 1.6;
@@ -195,19 +203,23 @@ nav {
     text-align: left;
 }
 
+#photo-with-me2 {
+    width: 45%;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
 /* WORK*/
 
 .work-container {
     color: white;
     background-color: #19191E;
+
     margin-bottom: 10rem;
 }
 
 .work-container h1 {
     text-align: center;
 }
-
-
 
 .projects {
     display: flex;
@@ -218,14 +230,16 @@ nav {
 .projects img {
     width: 29vw;
     margin: 2rem 2rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 2px rgba(1,1, 1, 0.5);
 }
-
 
 /* Contact*/
 
 .contact-container {
     color: white;
     background-color: #19191E;
+
     text-align: center;
 }
 
@@ -233,22 +247,7 @@ nav {
     width: 2vw;
 }
 
-.contact-container h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.green-color {
-    color: #5bf55b;
-    font-size: 1.6rem;
-    margin-top: 2rem;
-}
-
 .email {
-    display: flex;
-    text-align: center;
-    justify-content: center;
     align-items: center;
     width: 100vw;
 }
@@ -259,22 +258,23 @@ nav {
     margin-left: 1rem;
 }
 
-footer {
-    color: white;
-    background-color: #000;
-    height: 4.6vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.25rem;
-}
-
 .contact-icons {
-    display: flex;
-    align-items: center;
+    justify-content: space-around;
+
     width: 10%;
     margin: 2rem auto auto;
     padding-bottom: 2rem;
-    justify-content: space-around;
+    
 }
+
+footer {
+    color: white;
+    background-color: #000;
+
+    height: 4.6vh;
+    font-size: 1.25rem;
+}
+
 @media screen and (max-width: 768px) {
+
+}

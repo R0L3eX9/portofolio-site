@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" href="style.css">
+
     <title>Razvan Maracine</title>
 </head>
 <header>
-    <div class="nav-container">
+    <div class="nav-container flex">
         <h1 id="logo"><a href="#home" class="logo">RM</a></h1>
         <nav>
             <ul class="links">
@@ -25,17 +27,17 @@
 
 <body>
     <div class="container" id="home">
-        <div class="short-description">
+        <div class="short-description flex">
             <img src="img/profile.jpg" alt="picture-with-me" id="photo-with-me1">
             <div class="description-text">
                 <h1>Hi, I am <br> Razvan Maracine</h1>
-                <p>Web Developer</p>
+                <p>- Web Developer -</p>
             </div>
         </div>
     </div>
     <div class="skill-container" id="skills">
         <h1 class="section-title">Skills</h1>
-        <div class="skill-icons">
+        <div class="skill-icons flex">
             <img src="img/html.svg" alt="html-icon" id="html-icon">
             <img src="img/css.svg" alt="css-icon" id="css-icon">
             <img src="img/icons8-javascript-480.svg" alt="javascript-icon" id="java-script-icon">
@@ -45,9 +47,9 @@
         </div>
         <a id="work-btn" href="#my-work">My Work</a>
     </div>
-    <div class="about-me-container" id="about-me">
+    <div class="about-me-container flex" id="about-me">
         <h1 class="section-title">About Me</h1>
-        <div class="about-me">
+        <div class="about-me flex">
             <div class="about-text">
                 <p>Hello, I am Razvan Maracine and I am a Web Developer, mostly front-end, I live in Romania and I spend
                     my time with personal projects and learning new stuff. I have a good understanding of HTML, CSS and
@@ -63,34 +65,32 @@
     <div class="work-container" id="my-work">
         <h1 class="section-title">My Work</h1>
         <div class="projects">
-            <img src="img/landingpage.png" alt="password-generator-img">
-            <img src="img/netrolelanding.png" alt="healthy-programmer-img">
-            <img src="img/landingpage.png" alt="typing-practice-img">
-            <img src="img/netrolelanding.png" alt="">
-            <img src="img/landingpage.png" alt="">
-            <img src="img/netrolelanding.png" alt="">
+           <a href="https://hprogrammer.netlify.app/" target="_blank"><img src="img/hprogramer.png" alt="password-generator-img" class="work-scale"></a>
+           <a href="https://netrole.netlify.app/" target="_blank"><img src="img/netrolelanding.png" alt="healthy-programmer-img" class="work-scale"></a>
+           <a href="https://typing-words-netrole.netlify.app" target="_blank"><img src="img/typing.png" alt="typing-practice-img" class="work-scale"></a>
+           <a href="#my-work" ><img src="img/coomingSoon.png" alt="cooming-soon" class="work-scale"></a>
+           <a href="#my-work" ><img src="img/coomingSoon.png" alt="cooming-soon" class="work-scale"></a>
+           <a href="#my-work" ><img src="img/coomingSoon.png" alt="cooming-soon" class="work-scale"></a>
         </div>
     </div>
 
     <div class="contact-container" id="contact">
-        <h1 class="section-title">Contact Me</h1>
+        <h1 class="section-title flex">Contact Me</h1>
         <h2 class="green-color">Work with me</h2>
-        <div class="email">
+        <div class="email flex">
             <img src="img/mail.svg" alt="mail-icon">
-            <a href="" class="green-color">rconstantin429@gmail.com</a>
+            <a href="rconstantin429@gmail.com" class="green-color">rconstantin429@gmail.com</a>
         </div>
-        <div class="contact-icons">
-
-            <a href=https://twitter.com/MRazvan7""> <img src="img/twitter.svg" alt="twitter-icon"></a>
-            <a href="https://github.com/R0L3eX9"> <img src="img/github.svg" alt="github-small-icon"></a>
-            <a href="https://www.linkedin.com/in/razvan-maracine-5a35021a7/"> <img src="img/linkedin.svg"
+        <div class="contact-icons flex">
+            <a href="https://twitter.com/MRazvan7" target="_blank"> <img src="img/twitter.svg" alt="twitter-icon"></a>
+            <a href="https://github.com/R0L3eX9" target="_blank"> <img src="img/github.svg" alt="github-small-icon"></a>
+            <a href="https://www.linkedin.com/in/razvan-maracine-5a35021a7/" target="_blank"> <img src="img/linkedin.svg"
                     alt="linkdin-icon"></a>
-
         </div>
     </div>
 </body>
 
-<footer>
+<footer class="flex">
     <p>2020 Razvan Maracine</p>
 </footer>
 
