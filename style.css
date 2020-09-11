@@ -10,8 +10,21 @@ footer {
     font-family: 'Popins', sans-serif;
 }
 
+.burger {
+    display: none;
+}
+
 body {
     overflow-x: hidden;
+}
+
+
+.burger div {
+    background-color: white;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    display: none;
 }
 
 /* Global classes*/
@@ -58,10 +71,6 @@ body {
 .logo {
     text-decoration: none;
     color: #fff;
-}
-
-nav {
-    position: relative;
 }
 
 .links {
@@ -135,7 +144,7 @@ nav {
 }
 
 .skill-icons img {
-    width: 5vw;
+    width: 7vw;
 
 }
 
@@ -277,22 +286,61 @@ footer {
     color: white;
     background-color: #000;
 
-    height: 4.6vh;
+    height: 4.6vw;
     font-size: 1.25rem;
 }
 
 
+@media screen and (max-width: 910px) {
+    nav {
+        display: block;
+    }
 
+    .relative {
+        position: relative;
+    }
 
+    #nav-bar {
+        background-color: #2c2c33;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        transform: translate(-22rem, 2.4rem);
+    }
 
+    .links li {
+        display: block;
+        font-size: 3rem;
+        text-align: left;
+        margin: 3rem 10rem;
+    }
 
+    .burger {
+        display: block;
+    }
 
+    #burger {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+}
 
 @media screen and (max-width: 768px) {
+
+
+
+
     /* HOME*/
 
     .container {
         margin: 0;
+
     }
 
     .short-description {
@@ -330,7 +378,7 @@ footer {
     }
 
     .skill-icons img {
-        width: 12vw;
+        width: 13vw;
     }
 
     #work-btn {
